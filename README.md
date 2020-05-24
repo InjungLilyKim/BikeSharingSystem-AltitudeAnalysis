@@ -13,3 +13,10 @@ This lets us run the Poisson regression model using bike sharing system data, an
 https://people.cs.pitt.edu/~injungkim/project/bikesharing/modelling_summer.csv
 
 https://people.cs.pitt.edu/~injungkim/project/bikesharing/modelling_winter.csv
+
+# Full Data is available in below link
+Below data has the actual values
+
+https://people.cs.pitt.edu/~injungkim/project/bikesharing/modelling_9_summer.csv
+
+https://people.cs.pitt.edu/~injungkim/project/bikesharing/modelling_9_winter.csv
