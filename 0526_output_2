@@ -1,0 +1,71 @@
+\--------------------------------------
+\poisson regression with constant
+\ 1)altitude and distance are range value
+\ 2)season:
+all
+\ 3)include same station rental/return
+\--------------------------------------
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}                            &   daily\_usage   & \textbf{  No. Observations:  } &   709436    \\
+\textbf{Model:}                                    &       GLM        & \textbf{  Df Residuals:      } &   709401    \\
+\textbf{Model Family:}                             &     Poisson      & \textbf{  Df Model:          } &       34    \\
+\textbf{Link Function:}                            &       log        & \textbf{  Scale:             } &    1.0000   \\
+\textbf{Method:}                                   &       IRLS       & \textbf{  Log-Likelihood:    } &   -47988.   \\
+\textbf{Date:}                                     & Wed, 27 May 2020 & \textbf{  Deviance:          } &    78482.   \\
+\textbf{Time:}                                     &     02:03:31     & \textbf{  Pearson chi2:      } &  9.91e+05   \\
+\textbf{No. Iterations:}                           &        22        & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                                   & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}                                 &      -8.8803  &        0.142     &   -62.653  &         0.000        &       -9.158    &       -8.602     \\
+\textbf{C(dayofweek)[T.Monday]}                    &      -0.2910  &        0.037     &    -7.897  &         0.000        &       -0.363    &       -0.219     \\
+\textbf{C(dayofweek)[T.Saturday]}                  &       0.0802  &        0.032     &     2.481  &         0.013        &        0.017    &        0.144     \\
+\textbf{C(dayofweek)[T.Sunday]}                    &      -0.1758  &        0.036     &    -4.857  &         0.000        &       -0.247    &       -0.105     \\
+\textbf{C(dayofweek)[T.Thursday]}                  &      -0.2873  &        0.034     &    -8.428  &         0.000        &       -0.354    &       -0.220     \\
+\textbf{C(dayofweek)[T.Tuesday]}                   &       0.0729  &        0.035     &     2.091  &         0.036        &        0.005    &        0.141     \\
+\textbf{C(dayofweek)[T.Wednesday]}                 &      -0.1736  &        0.036     &    -4.818  &         0.000        &       -0.244    &       -0.103     \\
+\textbf{C(dis\_range)[T.4]}                        &      -1.5293  &        0.193     &    -7.925  &         0.000        &       -1.907    &       -1.151     \\
+\textbf{C(dis\_range)[T.6]}                        &      -1.3932  &        0.184     &    -7.560  &         0.000        &       -1.754    &       -1.032     \\
+\textbf{C(dis\_range)[T.7]}                        &      -2.0617  &        0.399     &    -5.166  &         0.000        &       -2.844    &       -1.279     \\
+\textbf{C(alti\_range)[T.-200]}                    &       0.4339  &        0.143     &     3.034  &         0.002        &        0.154    &        0.714     \\
+\textbf{C(alti\_range)[T.-100]}                    &       1.5033  &        0.129     &    11.676  &         0.000        &        1.251    &        1.756     \\
+\textbf{C(alti\_range)[T.100]}                     &       0.8878  &        0.130     &     6.851  &         0.000        &        0.634    &        1.142     \\
+\textbf{C(alti\_range)[T.200]}                     &       0.0031  &        0.153     &     0.020  &         0.984        &       -0.296    &        0.302     \\
+\textbf{C(alti\_range)[T.300]}                     &      -0.4949  &        0.212     &    -2.334  &         0.020        &       -0.911    &       -0.079     \\
+\textbf{C(dis\_range)[T.4]:C(alti\_range)[T.-200]} &       0.1446  &        0.213     &     0.679  &         0.497        &       -0.273    &        0.562     \\
+\textbf{C(dis\_range)[T.6]:C(alti\_range)[T.-200]} &      -0.9488  &        0.221     &    -4.291  &         0.000        &       -1.382    &       -0.515     \\
+\textbf{C(dis\_range)[T.7]:C(alti\_range)[T.-200]} &      -0.3414  &        0.449     &    -0.760  &         0.447        &       -1.222    &        0.539     \\
+\textbf{C(dis\_range)[T.4]:C(alti\_range)[T.-100]} &      -0.1386  &        0.197     &    -0.702  &         0.483        &       -0.526    &        0.248     \\
+\textbf{C(dis\_range)[T.6]:C(alti\_range)[T.-100]} &      -1.0022  &        0.223     &    -4.494  &         0.000        &       -1.439    &       -0.565     \\
+\textbf{C(dis\_range)[T.7]:C(alti\_range)[T.-100]} &      -1.0772  &        1.077     &    -1.000  &         0.317        &       -3.188    &        1.033     \\
+\textbf{C(dis\_range)[T.4]:C(alti\_range)[T.100]}  &       0.4948  &        0.198     &     2.497  &         0.013        &        0.106    &        0.883     \\
+\textbf{C(dis\_range)[T.6]:C(alti\_range)[T.100]}  &      -0.2101  &        0.220     &    -0.955  &         0.340        &       -0.641    &        0.221     \\
+\textbf{C(dis\_range)[T.7]:C(alti\_range)[T.100]}  &     -20.1583  &     1.18e+04     &    -0.002  &         0.999        &    -2.31e+04    &      2.3e+04     \\
+\textbf{C(dis\_range)[T.4]:C(alti\_range)[T.200]}  &      -0.0786  &        0.227     &    -0.346  &         0.730        &       -0.524    &        0.367     \\
+\textbf{C(dis\_range)[T.6]:C(alti\_range)[T.200]}  &      -1.5834  &        0.270     &    -5.859  &         0.000        &       -2.113    &       -1.054     \\
+\textbf{C(dis\_range)[T.7]:C(alti\_range)[T.200]}  &      -0.6765  &        0.507     &    -1.334  &         0.182        &       -1.670    &        0.317     \\
+\textbf{C(dis\_range)[T.4]:C(alti\_range)[T.300]}  &      -0.3299  &        0.331     &    -0.998  &         0.318        &       -0.978    &        0.318     \\
+\textbf{C(dis\_range)[T.6]:C(alti\_range)[T.300]}  &       0.0867  &        0.303     &     0.286  &         0.775        &       -0.508    &        0.681     \\
+\textbf{C(dis\_range)[T.7]:C(alti\_range)[T.300]}  &      -1.3130  &        1.090     &    -1.205  &         0.228        &       -3.449    &        0.823     \\
+\textbf{high\_real}                                &       0.0267  &        0.001     &    18.009  &         0.000        &        0.024    &        0.030     \\
+\textbf{low\_real}                                 &       0.0106  &        0.002     &     7.002  &         0.000        &        0.008    &        0.014     \\
+\textbf{perci\_real}                               &      -0.1592  &        0.023     &    -6.867  &         0.000        &       -0.205    &       -0.114     \\
+\textbf{f\_station\_rack}                          &       0.0877  &        0.001     &    60.977  &         0.000        &        0.085    &        0.090     \\
+\textbf{t\_station\_rack}                          &       0.0959  &        0.001     &    68.798  &         0.000        &        0.093    &        0.099     \\
+\bottomrule
+\end{tabular}
+%\caption{Generalized Linear Model Regression Results}
+\end{center}
+PR train r2 and rmse
+0.20076732254035076
+PR test r2 and rmse
+Optimization terminated successfully.
+         Current function value: 0.067448
+         Iterations 16
+0.1909041207845749
+
+********************************

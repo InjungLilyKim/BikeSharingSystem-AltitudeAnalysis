@@ -1,0 +1,102 @@
+\--------------------------------------
+\poisson regression with constant
+\ 1)altitude and distance are real value
+\ 2)season:
+summer
+\ 3)include same station rental/return
+\--------------------------------------
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}            &   daily\_usage   & \textbf{  No. Observations:  } &   388864    \\
+\textbf{Model:}                    &       GLM        & \textbf{  Df Residuals:      } &   388849    \\
+\textbf{Model Family:}             &     Poisson      & \textbf{  Df Model:          } &       14    \\
+\textbf{Link Function:}            &       log        & \textbf{  Scale:             } &    1.0000   \\
+\textbf{Method:}                   &       IRLS       & \textbf{  Log-Likelihood:    } &   -36587.   \\
+\textbf{Date:}                     & Wed, 27 May 2020 & \textbf{  Deviance:          } &    59153.   \\
+\textbf{Time:}                     &     02:11:36     & \textbf{  Pearson chi2:      } &  1.03e+06   \\
+\textbf{No. Iterations:}           &        8         & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                   & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}                 &      -4.6345  &        0.157     &   -29.515  &         0.000        &       -4.942    &       -4.327     \\
+\textbf{C(dayofweek)[T.Monday]}    &      -0.3787  &        0.042     &    -9.071  &         0.000        &       -0.461    &       -0.297     \\
+\textbf{C(dayofweek)[T.Saturday]}  &       0.1470  &        0.036     &     4.033  &         0.000        &        0.076    &        0.219     \\
+\textbf{C(dayofweek)[T.Sunday]}    &      -0.1828  &        0.040     &    -4.539  &         0.000        &       -0.262    &       -0.104     \\
+\textbf{C(dayofweek)[T.Thursday]}  &      -0.3819  &        0.039     &    -9.916  &         0.000        &       -0.457    &       -0.306     \\
+\textbf{C(dayofweek)[T.Tuesday]}   &      -0.0228  &        0.039     &    -0.585  &         0.559        &       -0.099    &        0.054     \\
+\textbf{C(dayofweek)[T.Wednesday]} &      -0.2748  &        0.042     &    -6.511  &         0.000        &       -0.357    &       -0.192     \\
+\textbf{high\_real}                &       0.0059  &        0.002     &     2.603  &         0.009        &        0.001    &        0.010     \\
+\textbf{low\_real}                 &       0.0013  &        0.002     &     0.738  &         0.461        &       -0.002    &        0.005     \\
+\textbf{perci\_real}               &      -0.1179  &        0.032     &    -3.740  &         0.000        &       -0.180    &       -0.056     \\
+\textbf{f\_station\_rack}          &       0.0897  &        0.002     &    56.827  &         0.000        &        0.087    &        0.093     \\
+\textbf{t\_station\_rack}          &       0.1040  &        0.002     &    67.147  &         0.000        &        0.101    &        0.107     \\
+\textbf{distance\_real}            &      -0.9840  &        0.011     &   -87.985  &         0.000        &       -1.006    &       -0.962     \\
+\textbf{alti\_diff}                &       0.0001  &        0.000     &     0.455  &         0.649        &       -0.000    &        0.001     \\
+\textbf{distance\_real:alti\_diff} &      -0.0008  &        0.000     &    -7.130  &         0.000        &       -0.001    &       -0.001     \\
+\bottomrule
+\end{tabular}
+%\caption{Generalized Linear Model Regression Results}
+\end{center}
+PR train r2 and rmse
+0.25103010934607345
+PR test r2 and rmse
+Optimization terminated successfully.
+         Current function value: 0.094415
+         Iterations 9
+0.23686073146358763
+
+********************************
+\--------------------------------------
+\poisson regression with constant
+\ 1)altitude and distance are real value
+\ 2)season:
+winter
+\ 3)include same station rental/return
+\--------------------------------------
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}            &   daily\_usage   & \textbf{  No. Observations:  } &   320572    \\
+\textbf{Model:}                    &       GLM        & \textbf{  Df Residuals:      } &   320557    \\
+\textbf{Model Family:}             &     Poisson      & \textbf{  Df Model:          } &       14    \\
+\textbf{Link Function:}            &       log        & \textbf{  Scale:             } &    1.0000   \\
+\textbf{Method:}                   &       IRLS       & \textbf{  Log-Likelihood:    } &   -10082.   \\
+\textbf{Date:}                     & Wed, 27 May 2020 & \textbf{  Deviance:          } &    16692.   \\
+\textbf{Time:}                     &     02:11:43     & \textbf{  Pearson chi2:      } &  3.98e+05   \\
+\textbf{No. Iterations:}           &        8         & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                   & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}                 &      -5.9623  &        0.145     &   -41.207  &         0.000        &       -6.246    &       -5.679     \\
+\textbf{C(dayofweek)[T.Monday]}    &      -0.0154  &        0.086     &    -0.180  &         0.858        &       -0.183    &        0.153     \\
+\textbf{C(dayofweek)[T.Saturday]}  &      -0.3716  &        0.098     &    -3.794  &         0.000        &       -0.564    &       -0.180     \\
+\textbf{C(dayofweek)[T.Sunday]}    &      -0.2233  &        0.097     &    -2.302  &         0.021        &       -0.413    &       -0.033     \\
+\textbf{C(dayofweek)[T.Thursday]}  &       0.2581  &        0.079     &     3.286  &         0.001        &        0.104    &        0.412     \\
+\textbf{C(dayofweek)[T.Tuesday]}   &       0.1237  &        0.085     &     1.453  &         0.146        &       -0.043    &        0.291     \\
+\textbf{C(dayofweek)[T.Wednesday]} &       0.0924  &        0.088     &     1.054  &         0.292        &       -0.079    &        0.264     \\
+\textbf{high\_real}                &       0.0225  &        0.003     &     7.151  &         0.000        &        0.016    &        0.029     \\
+\textbf{low\_real}                 &       0.0045  &        0.004     &     1.110  &         0.267        &       -0.003    &        0.012     \\
+\textbf{perci\_real}               &      -0.1664  &        0.040     &    -4.205  &         0.000        &       -0.244    &       -0.089     \\
+\textbf{f\_station\_rack}          &       0.0601  &        0.004     &    16.356  &         0.000        &        0.053    &        0.067     \\
+\textbf{t\_station\_rack}          &       0.0726  &        0.004     &    20.157  &         0.000        &        0.066    &        0.080     \\
+\textbf{distance\_real}            &      -0.9517  &        0.024     &   -39.419  &         0.000        &       -0.999    &       -0.904     \\
+\textbf{alti\_diff}                &       0.0011  &        0.001     &     1.802  &         0.072        &    -9.64e-05    &        0.002     \\
+\textbf{distance\_real:alti\_diff} &       0.0003  &        0.000     &     1.075  &         0.282        &       -0.000    &        0.001     \\
+\bottomrule
+\end{tabular}
+%\caption{Generalized Linear Model Regression Results}
+\end{center}
+PR train r2 and rmse
+0.08576249690770299
+PR test r2 and rmse
+Optimization terminated successfully.
+         Current function value: 0.030811
+         Iterations 9
+0.1010053899141893
+
+********************************
