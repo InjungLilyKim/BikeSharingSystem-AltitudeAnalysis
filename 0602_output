@@ -1,0 +1,165 @@
+\ 1)season:
+summer
+\ 2)altitude and distance are range value
+\ 3)include same station rental/return
+PR train rmse: in-sample error
+0.2566
+PR valid rmse: out-of-sample error
+0.2509
+PR test rmse
+0.2502
+\--------------------------------------
+\ 2)altitude and distance are real value
+\ 3)include same station rental/return
+PR train rmse: in-sample error
+0.2506
+PR valid rmse: out-of-sample error
+0.2452
+PR test rmse
+0.2398
+\--------------------------------------
+\ 2)altitude range and distance real value
+\ 3)include same station rental/return
+PR train rmse: in-sample error
+0.2486
+PR valid rmse: out-of-sample error
+0.2431
+PR test rmse
+0.2365
+\--------------------------------------
+\ 2)altitude real and distance range value
+\ 3)include same station rental/return
+PR train rmse: in-sample error
+0.2583
+PR valid rmse: out-of-sample error
+0.2525
+PR test rmse
+0.2529
+\--------------------------------------
+\ 2)both are range value
+\ 3)include a loop feature
+PR train rmse: in-sample error
+0.2461
+PR valid rmse: out-of-sample error
+0.2408
+PR test rmse
+0.2327
+\--------------------------------------
+\ 2)both are real value
+\ 3)include a loop feature
+PR train rmse: in-sample error
+0.2468
+PR valid rmse: out-of-sample error
+0.2413
+PR test rmse
+0.2335
+\--------------------------------------
+\ 2)altitude range and distance real value
+\ 3)include a loop feature
+PR train rmse: in-sample error
+0.2461
+PR valid rmse: out-of-sample error
+0.2407
+PR test rmse
+0.2327
+\--------------------------------------
+\ 2)altitude real and distance range value
+\ 3)include a loop feature
+PR train rmse: in-sample error
+0.2469
+PR valid rmse: out-of-sample error
+0.2414
+PR test rmse
+0.2335
+\--------------------------------------
+\ 1)season:
+winter
+\ 2)altitude and distance are range value
+\ 3)include same station rental/return
+PR train rmse: in-sample error
+0.0909
+PR valid rmse: out-of-sample error
+0.083
+PR test rmse
+0.0895
+\--------------------------------------
+\ 2)altitude and distance are real value
+\ 3)include same station rental/return
+PR train rmse: in-sample error
+0.0908
+PR valid rmse: out-of-sample error
+0.0827
+PR test rmse
+0.0888
+\--------------------------------------
+\ 2)altitude range and distance real value
+\ 3)include same station rental/return
+PR train rmse: in-sample error
+0.0907
+PR valid rmse: out-of-sample error
+0.0827
+PR test rmse
+0.0887
+\--------------------------------------
+\ 2)altitude real and distance range value
+\ 3)include same station rental/return
+PR train rmse: in-sample error
+0.091
+PR valid rmse: out-of-sample error
+0.083
+PR test rmse
+0.0896
+\--------------------------------------
+\ 2)both are range value
+\ 3)include a loop feature
+PR train rmse: in-sample error
+0.0907
+PR valid rmse: out-of-sample error
+0.0826
+PR test rmse
+0.0882
+\--------------------------------------
+\ 2)both are real value
+\ 3)include a loop feature
+PR train rmse: in-sample error
+0.0907
+PR valid rmse: out-of-sample error
+0.0827
+PR test rmse
+0.0881
+\--------------------------------------
+\ 2)altitude range and distance real value
+\ 3)include a loop feature
+PR train rmse: in-sample error
+0.0907
+PR valid rmse: out-of-sample error
+0.0827
+PR test rmse
+0.0881
+\--------------------------------------
+\ 2)altitude real and distance range value
+\ 3)include a loop feature
+PR train rmse: in-sample error
+0.0908
+PR valid rmse: out-of-sample error
+0.0827
+PR test rmse
+0.0882
+\--------------------------------------
+\ 1)season: all
+\ 2)altitude and distance are range value
+\ 3)include same station rental/return
+PR train rmse: in-sample error
+0.2004
+PR valid rmse: out-of-sample error
+0.1951
+PR test rmse
+0.1967
+\--------------------------------------
+PR train rmse: in-sample error
+0.2004
+PR valid rmse: out-of-sample error
+0.1951
+PR test rmse
+0.1967
+\--------------------------------------
